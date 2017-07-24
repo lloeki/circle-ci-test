@@ -1,8 +1,9 @@
 machine:
   xcode:
-    version: 8.2
+    version: 9.0
 test:
     override:
+        - echo "info"
         - uname -a
         - whoami
         - pwd
@@ -11,10 +12,17 @@ test:
         - ls /usr/local
         - echo "#### opt"
         - ls /opt
+        - echo "#### bashrc"
+        - cat .bashrc
+        - echo "#### sudo"
         - sudo ls
+        - echo "#### clean"
         - sudo rm -rf /usr/local/*
         - sudo rm -rf /opt/*
         - echo "#### /usr/local"
         - ls /usr/local
         - echo "#### opt"
         - ls /opt
+        - echo "#### java"
+        - java -version
+        - javac -version
