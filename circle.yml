@@ -6,3 +6,7 @@ test:
         - uname -a
         - pwd
         - ls -a
+        - echo "#### /usr/local"
+        - find /usr/local
+        - echo "#### opt"
+        - find /opt
