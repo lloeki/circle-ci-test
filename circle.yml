@@ -34,3 +34,13 @@ test:
         - echo "#### java"
         - java -version
         - javac -version
+        - echo "#### python"
+        - which python
+        - python --version
+        - echo "#### tools"
+        - which xcpretty
+        - which carthage
+        - which cocoapods
+        - which fastlane
+        - which shenzhen
+        - which xctool
