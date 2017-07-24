@@ -17,8 +17,8 @@ test:
         - echo "#### sudo"
         - sudo ls
         - echo "#### clean"
-        - sed -i~ -e '/^# Homebrew alternate path/,+2d' ~/.bashrc
-        - sed -i~ -e '/^# chruby hooks/,+3d' ~/.bashrc
+        - sed -i~ -e '/^# Homebrew alternate path/ {N;N;d;}' ~/.bashrc
+        - sed -i~ -e '/^# chruby hooks/ {N;N;N;d:}' ~/.bashrc
         - sudo rm -rf /usr/local/*
         - sudo rm -rf /opt/*
         - echo "#### bashrc"
