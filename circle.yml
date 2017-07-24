@@ -4,9 +4,17 @@ machine:
 test:
     override:
         - uname -a
+        - whoami
         - pwd
         - ls -a
         - echo "#### /usr/local"
-        - find /usr/local
+        - ls /usr/local
         - echo "#### opt"
-        - find /opt
+        - ls /opt
+        - sudo ls
+        - sudo rm -rf /usr/local/*
+        - sudo rm -rf /opt/*
+        - echo "#### /usr/local"
+        - ls /usr/local
+        - echo "#### opt"
+        - ls /opt
