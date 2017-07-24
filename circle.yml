@@ -1,6 +1,6 @@
 machine:
   xcode:
-    version: 8.2.1
+    version: 9.0
 test:
     override:
         - echo "info"
@@ -14,13 +14,13 @@ test:
         - test -e /opt && ls /opt || sudo mkdir /opt
         - echo "#### bashrc"
         - cat ~/.bashrc
-        - echo "#### tools"
-        - which xcpretty
-        - which carthage
-        - which pod # cocoapods
-        - which fastlane
-        - which ipa # shenzhen
-        - which xctool
+        # echo "#### tools"
+        # which xcpretty
+        # which carthage
+        # which pod # cocoapods
+        # which fastlane
+        # which ipa # shenzhen
+        # which xctool
         - echo "#### sudo"
         - sudo ls
         - echo "ruby"
