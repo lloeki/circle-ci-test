@@ -16,6 +16,10 @@ test:
         - cat ~/.bashrc
         - echo "#### sudo"
         - sudo ls
+        - echo "ruby"
+        - which ruby
+        - ruby --version
+        - chruby
         - echo "#### clean"
         - sed -i~ -e '/^# Homebrew alternate path/ {N;N;d;}' ~/.bashrc
         - sed -i~ -e '/^# chruby hooks/ {N;N;N;d;}' ~/.bashrc
