@@ -14,6 +14,13 @@ test:
         - test -e /opt && ls /opt || sudo mkdir /opt
         - echo "#### bashrc"
         - cat ~/.bashrc
+        - echo "#### tools"
+        - which xcpretty
+        - which carthage
+        - which cocoapods
+        - which fastlane
+        - which shenzhen
+        - which xctool
         - echo "#### sudo"
         - sudo ls
         - echo "ruby"
@@ -37,10 +44,3 @@ test:
         - echo "#### python"
         - which python
         - python --version
-        - echo "#### tools"
-        - which xcpretty
-        - which carthage
-        - which cocoapods
-        - which fastlane
-        - which shenzhen
-        - which xctool
