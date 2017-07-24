@@ -17,9 +17,9 @@ test:
         - echo "#### tools"
         - which xcpretty
         - which carthage
-        - which cocoapods
+        - which pod # cocoapods
         - which fastlane
-        - which shenzhen
+        - which ipa # shenzhen
         - which xctool
         - echo "#### sudo"
         - sudo ls
