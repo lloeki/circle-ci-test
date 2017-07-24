@@ -11,7 +11,7 @@ test:
         - echo "#### /usr/local"
         - ls /usr/local
         - echo "#### opt"
-        - ls /opt
+        - [ -e /opt ] && ls /opt
         - echo "#### bashrc"
         - cat ~/.bashrc
         - echo "#### sudo"
@@ -30,7 +30,7 @@ test:
         - echo "#### /usr/local"
         - ls /usr/local
         - echo "#### opt"
-        - ls /opt
+        - [ -e /opt ] && ls /opt
         - echo "#### java"
         - java -version
         - javac -version
