@@ -1,8 +1,0 @@
-machine:
-  xcode:
-    version: 8.2
-jobs:
-    build:
-        - run: uname -a
-        - run: pwd
-        - run: ls -a

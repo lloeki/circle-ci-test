@@ -1,0 +1,8 @@
+machine:
+  xcode:
+    version: 8.2
+test:
+    override:
+        - uname -a
+        - pwd
+        - ls -a
